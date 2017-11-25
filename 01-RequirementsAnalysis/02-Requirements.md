@@ -55,6 +55,7 @@
 
 * Allow the user to report unplanned distruptions involving his trip
 * Allow the user to read other's (and his) report involving trasnport lines of his interest
+
 (7)
 
 * Conservare statistiche riguardanti i disagi sui viaggi seguiti dagli utenti 
@@ -67,6 +68,7 @@
 * Allow to the user to read statistics on the distruptions
 	* On his trips
 	* On his transport lines of interest
+
 (8)
 
 * Permettere all'utente di registrarsi al sistema mediante l'inserimento di username, email e password
@@ -103,25 +105,68 @@
 
 # Non-functional requirements
 
-(1)
 
-* Riconoscere disagi sui mezzi di trasporto entro 3 minuti da quando si manifeso 
+## Interoperability
 
-* Discover distruptions on public transport withing 3 minutes of their appearence
- 
-(9)
+* APIs for external and internal use will be provided by the system, allowing for all the user-functionalities to be perfomed programmatically, also allowing external integration
 
-* Permettere all'utente di accedere al servizio da cellulare, tablet, computer purchè è connesso ad internet
-* Il servizio deve avere tempo di caricamento (first paint) inferiore a 2 secondi
-* Il servizio deve avere tempo di caricamento (dei dati) inferiore a 5 secondi
-* L'utente può seguire al massimo 10 viaggi al giorno
+## Performance
 
-* Allow the user to access the service from a smartphone, tablet, computer while it is connected to the internet
+* Discover distruptions on public transport within 4 minutes of their appearence
+
 * The service should load (first paint load) in less than 2 seconds
 * The service should load relevant data in less than 5 seconds
 
-# Domain requirements
 
-* Minimizzare il numero e la frequenza di richieste ai servizi esterni il più possibile
+## Scalability
+
+* The system should be as decentralized as possible to allow for multiple information-retrieval nodes to be used
+* The user will be able to follow at max 10 trips per day
+
+## Capacity
+
+* The system should be able to handle 1000 users and 5000 daily unique trips
+
+## Availability
+
+* The system should try to keep 24/7 uptime
+	* The system should grant service between 05:00 and 24:00 
+* We can't grant full availability if external services are down
+
+## Usability
+
+* Allow the user to access the service from a smartphone, tablet, computer while it is connected to the internet
+
+## Domain requirements
 
 * Minimize the number and the frequency of requests to external services both keeping performance and rate-limiting in mind
+
+## Recoverability
+
+* The system should gracefully handle failures of external services without crashing
+* If the system crashes it will automatically restart
+
+## Maintainability
+
+* If there are critical bugs they will be fixed whithin 3 working days
+* If there are non-critical bugs they will be fixed whithin 2 working weeks
+* Update will be performed in regular intervals
+
+## Security
+
+* User data will be kept safe and private
+* The website will not allow for unauthorized access
+* The website will not allow for injections and XSS
+
+
+## Localization
+
+* The system will be in English but will be designed with future support of other languages 
+
+
+## Data Integrity
+
+* Data will be stored in the database as needed
+	* Detailed statistics for the current month will be saved
+	* Summarized data will be stored for the previous months 
+* Unneeded data will be deleted as soon as it is not needed
