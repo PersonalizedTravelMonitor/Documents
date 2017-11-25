@@ -137,10 +137,6 @@
 
 * Allow the user to access the service from a smartphone, tablet, computer while it is connected to the internet
 
-## Domain requirements
-
-* Minimize the number and the frequency of requests to external services both keeping performance and rate-limiting in mind
-
 ## Recoverability
 
 * The system should gracefully handle failures of external services without crashing
@@ -158,11 +154,9 @@
 * The website will not allow for unauthorized access
 * The website will not allow for injections and XSS
 
-
 ## Localization
 
 * The system will be in English but will be designed with future support of other languages 
-
 
 ## Data Integrity
 
@@ -170,3 +164,8 @@
 	* Detailed statistics for the current month will be saved
 	* Summarized data will be stored for the previous months 
 * Unneeded data will be deleted as soon as it is not needed
+
+# Domain requirements
+
+* Minimize the number and the frequency of requests to external services both keeping performance and rate-limiting in mind
+* Follow design and implementation standards (W3C, Google)
