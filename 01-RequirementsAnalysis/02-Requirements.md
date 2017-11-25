@@ -2,109 +2,78 @@
 
 # Functional requirements 
 
+* *Requirement [Expected Complexity (1-5), MoSCoW Level]*
+
 (1)
 
-* Permettere all'utente di seguire viaggi
-	* Seguire viaggi occasionali
-	* Seguire viaggi periodici
-		* Può specificare i giorni della settimana in cui seguire il viaggio (di default da Lunedì a Venerdì)
-		
-* Permettere all'utente di smettere di seguire un viaggio
-
-* Inviare notifiche all'utente relative ai disagi che coinvolgono i viaggi che segue
-
-* Allow the user to follow trips
-	* To follow trips on a one-time basis
-	* To follow trips periodically
+* Allow the user to follow trips *[4, M]*
+	* To follow trips on a one-time basis *[3, M]*
+	* To follow trips periodically *[4, S]*
 		* The user can specify days of the week in which to follow a trip (by default from Monday to Friday)
-* Send notifications to the user based to distruptions affecting trips he/she is following
+* Allow the user to stop following a trip *[2, M]*
+* Send notifications to the user based to distruptions affecting trips he/she is following *[2/3, M]*
+
 (2)
 
-* Trovare in automatico alternative ad un determinato viaggio soggetto a disagi
-	* Trovare mezzi di trasporto pubblici alternativi
-	* Trovare mezzi di trasporto privati alternativi
-
-* Automatically find alternatives to a given trip affected by distruptions
-	* Find alternative public transport solutions
+* Automatically find alternatives to a given trip affected by distruptions *[5, C]*
+	* Find alternative public transport solutions 
 	* Find alternative private transport solutions
 
 (3)
 
-* Permettere all'utente di configuare quali tipologie di notifiche ricevere 
-	* In base alla gravità della notifica (quantità ritardo)
-	* In base al luogo dove si trova l'utente
-	* In base alla tipologia del disagio
-* Permettere all'utente di configurare quante tipologie ricevere
-	* Frequenza
-	* Numero massimo
-
-* Allow the user to configure which notifications he/she should receive
+* Allow the user to configure which notifications he/she should receive *[3, C]*
 	* According to the severity of the issue
 	* According to the type of the issue
-	* According to the place where the user is located
+	* According to the place where the user is located *[5, C]*
+* Allow the user to configure how many notifications he/she should receive  *[3, C]* 
+	* Frequency
+	* Maximum number
+
 (4)
 
-* Riconoscere i disagi programmati e notificare gli utenti interessati almeno due giorni prima (o appena possibile in caso manchino meno di due giorni) dell'inizio del disagio programmato
-
-* Recognize planned distruptions of the service and send notifications to the users at least two days before the event (or as soon as possible if the event is happening in less than two days)
+* Recognize planned distruptions of the service and send notifications to the users at least two days before the event (or as soon as possible if the event is happening in less than two days) *[5, S]*
 
 (6)
 
-* Permettere all'utente di segnalare disagi non programmati che coinvolgono un suo viaggio
-* Permettere all'utente di consulatare segnalazioni di altri utenti relative alla propria linea di interesse
-
-* Allow the user to report unplanned distruptions involving his trip
-* Allow the user to read other's (and his) report involving trasnport lines of his interest
+* Allow the user to report unplanned distruptions involving his trip *[3, S]*
+	* The reports will be divided in categories (Delay, Suppression, Other)
+	* It will be possibile to also add an optional short description
+* Allow the user to read other's (and his) report involving transport lines of his interest *[2, S]*
 
 (7)
 
-* Conservare statistiche riguardanti i disagi sui viaggi seguiti dagli utenti 
-* Permettere all'utente di consultare le statistiche sui disagi 
-	* Dei propri viaggi
-	* Delle proprie linee
-
-* Store statistics about distruptions on trips followed by users
+* Store statistics about distruptions on trips followed by users *[3, C]*
 	* Average Delay
-* Allow to the user to read statistics on the distruptions
+* Allow to the user to read statistics on the distruptions *[2, C]*
 	* On his trips
 	* On his transport lines of interest
 
 (8)
 
-* Permettere all'utente di registrarsi al sistema mediante l'inserimento di username, email e password
-* Permettere all'utente di registrarsi tramite servizi di autenticazione esterni (Google, Facebook)
-
-* Allow the user to register to the system using username, email and password
-* Allow the user to register using external authentication services (Google, Facebook)
+* Allow the user to register to the system using username, email and password *[3, M]*
+* Allow the user to register using external authentication services (Google, Facebook) *[4, C]*
 
 (10)
 
-* Comunicare informazioni che coinvolgono la l'intera linea di interesse  
-
-* Recognize distruptions involving a whole transport line (when possible) in the moments before the trip 
-* Send notifications on issues involving a whole transport line
+* Recognize distruptions involving a whole transport line (when possible) in the moments before the trip *[4/5, S]*
+* Send notifications on issues involving a whole transport line *[2/3, S]*
 
 (11)
 
-* Permettere all'utente di condividere lo stato del viaggio con servizi esterni (Facebook, Twitter, Email, Whatsapp)
+* Allow the user to share the status of a trip with external services (Facebook, Twitter, Email, Whatsapp) *[2, C/W]*
 
-* Allow the user to share the status of a trip with external services (Facebook, Twitter, Email, Whatsapp)
+(12)
 
-(C12)
-
-* Permettere all'utente di contattare gli amministratori di sistema tramite email
-
-* Allow the user to contact the administrator through email
+* Allow the user to contact the administrator through email *[1, S]*
 
 (A1)
 
-* Permettere all'amministratore di inviare notifiche testuali agli utenti 
-* Peremttere all'amministratore di visualizzare inforazioni sullo stato del sistema, utenti, viaggi segnalazioni in una apposita sezione
-* Permettere all'amministratore di modificare le segnalazioni degli utenti 
-* Permettere all'amministratore di eliminare le segnalazio degli utenti
+* Permettere all'amministratore di inviare notifiche testuali agli utenti *[2/3, C]*
+* Peremttere all'amministratore di visualizzare inforazioni sullo stato del sistema, utenti, viaggi segnalazioni in una apposita sezione *[3, C]*
+* Permettere all'amministratore di modificare le segnalazioni degli utenti *[3, S]* 
+* Permettere all'amministratore di eliminare le segnalazioni degli utenti *[2, S]*
 
 # Non-functional requirements
-
 
 ## Interoperability
 
