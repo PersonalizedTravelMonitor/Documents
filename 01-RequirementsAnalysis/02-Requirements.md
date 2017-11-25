@@ -8,6 +8,9 @@
 	* Seguire viaggi occasionali
 	* Seguire viaggi periodici
 		* Può specificare i giorni della settimana in cui seguire il viaggio (di default da Lunedì a Venerdì)
+		
+* Permettere all'utente di smettere di seguire un viaggio
+
 * Inviare notifiche all'utente relative ai disagi che coinvolgono i viaggi che segue
 
 * Allow the user to follow trips
@@ -17,11 +20,11 @@
 * Send notifications to the user based to distruptions affecting trips he/she is following
 (2)
 
-* Trovare alternative ad un determinato viaggio soggetto a disagi
+* Trovare in automatico alternative ad un determinato viaggio soggetto a disagi
 	* Trovare mezzi di trasporto pubblici alternativi
 	* Trovare mezzi di trasporto privati alternativi
 
-* Find alternative to a given trip affected by distruptions
+* Automatically find alternatives to a given trip affected by distruptions
 	* Find alternative public transport solutions
 	* Find alternative private transport solutions
 
@@ -66,17 +69,17 @@
 	* On his transport lines of interest
 (8)
 
-* Permettere all'utente di registrarsi al sistema
+* Permettere all'utente di registrarsi al sistema mediante l'inserimento di username, email e password
 * Permettere all'utente di registrarsi tramite servizi di autenticazione esterni (Google, Facebook)
 
-* Allow the user to register to the system
+* Allow the user to register to the system using username, email and password
 * Allow the user to register using external authentication services (Google, Facebook)
 
 (10)
 
 * Comunicare informazioni che coinvolgono la l'intera linea di interesse  
 
-* Recognize distruptions involving a whole transport line (when possible) 
+* Recognize distruptions involving a whole transport line (when possible) in the moments before the trip 
 * Send notifications on issues involving a whole transport line
 
 (11)
@@ -84,6 +87,19 @@
 * Permettere all'utente di condividere lo stato del viaggio con servizi esterni (Facebook, Twitter, Email, Whatsapp)
 
 * Allow the user to share the status of a trip with external services (Facebook, Twitter, Email, Whatsapp)
+
+(C12)
+
+* Permettere all'utente di contattare gli amministratori di sistema tramite email
+
+* Allow the user to contact the administrator through email
+
+(A1)
+
+* Permettere all'amministratore di inviare notifiche testuali agli utenti 
+* Peremttere all'amministratore di visualizzare inforazioni sullo stato del sistema, utenti, viaggi segnalazioni in una apposita sezione
+* Permettere all'amministratore di modificare le segnalazioni degli utenti 
+* Permettere all'amministratore di eliminare le segnalazio degli utenti
 
 # Non-functional requirements
 
