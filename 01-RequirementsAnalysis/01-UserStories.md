@@ -12,6 +12,7 @@
 * voglio accedere al servizio da ogni dispositivo ed anche con bassa connettività (9)
 * voglio essere notificato dei disagi che coinvolgono le *linee* che mi interessano attorno ai momenti che mi interessano (10)
 * voglio condividere lo stato del mio viaggio con altre persone per informarli dei disagi (11)
+* voglio contattare gli amministratori di sistema per segnalare anomalie o suggerimenti
 
 
 ## Commuter
@@ -28,3 +29,12 @@ I want to:
 * access theservice on every device I own even with low connectivity
 * get notified on distruptions affection the transport lines whenever they are relevant to me
 * share the status of my trip with other people to inform them of the distruptions
+
+
+## Administrator
+
+Voglio:
+
+* inviare manualmente notifiche riguardanti disagi programmati, informazioni tecniche o aggiornamenti del sistema
+* visualizzare report e statistiche su utenti, viaggi, senganalzioni
+* eliminare/modificare le segnalazioni manuali delle utenti per evitare usi impropri 
