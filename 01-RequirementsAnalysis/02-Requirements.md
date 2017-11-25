@@ -120,6 +120,7 @@
 ## Security
 
 * User data will be kept safe and private
+	* Passwords will be at least 6 character long
 * The website will not allow for unauthorized access
 * The website will not allow for injections and XSS
 
