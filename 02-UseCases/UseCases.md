@@ -27,7 +27,7 @@
 * Se l'utente inserisce dati sbagliati il sistema segnala l'errore all'utente che dovrà ripetere la rocedura 
 * Se l'utente è già loggato, il sistema lo riconosce e lo reindirizza automaticamente alla pagina principale
 
-## Finding alternatives to my trip
+### Finding alternatives to my trip
 
 + L'utente loggato si collega al servizio
 + L'utente sceglie un viaggio di suo interesse dai viaggi che sta seguendo
@@ -38,6 +38,16 @@
 **Alternative scenarios**
 
 * Se non ci sono alternative per un viaggio il sistema segnala all'utente l'assenza di alternative
+
+### Report a Disruption
++ L'utente loggato sceglie un viaggio di interesse
++ L'utente sceglie di segnalare un problema
++ L'utente inserisce nella segnalazione le informazioni necessarie e invia la segnalazione
++ Il sistema recepisce la segnalazione e lo comunica all'utente
+
+**Alternative scenarios**
+* L'utente non completa la segnalazione con le informazioni necessarie; essa viene cancellata
+* L'utente vuole inviare ulteriori segnalazioni in merito allo stesso viaggio
 
 ## Admin
 
