@@ -38,3 +38,25 @@
 **Alternative scenarios**
 
 * Se non ci sono alternative per un viaggio il sistema segnala all'utente l'assenza di alternative
+
+## Admin
+
+### Manually send a notification
+
++ L'admin si collega al servizio
++ L'admin effettua l'autenticazione inserendo le corrette credenziali di accesso
++ L'admin è autenticato
++ L'admin accede alla schermata per l'invio di notifiche manuali
++ L'admin sceglie il tipo di notifica da inviare (sciopero, aggiornamenti sistema, informazioni tecniche del servizio)
++ L'admin compila i campi proposti per l'invio della notifica e conferma l'operazione
++ L'admin conferma l'anteprima della notifica proposta dal sistema
++ Il sistema invia la notifica e mostra all'admin l'esito dell'operazione
+
+**Alternative scenarios**
+
+* Se l'admin inserisce dati di autenticazione sbagliati il sistema segnala l'errore e ripropone la procedura di autenticazione
+* Se l'admin è già loggato, il sistema lo riconosce e lo reindirizza automaticamente alla pagina principale
+* Se l'admin inserisce nei campi preposti alla creazione di una notifica un testo non valido e conferma l'operazione il sistema segnala l'errore e ripropone la procedura
+* Se l'admin non specifica un campo obbligatorio durante la creazione di una notifica, il sistema segnala l'errore e ripropone la procedura mantenendo i dati già inseriti precedentemente
+* Se l'admin non conferma la notifica nella schermata di anteprima il sistema ripropone la procedura di creazione della notifica mantenendo i dati già inseriti precedentemente
+* Se il sistema non riesce ad inviare la notifica segnala all'admin l'errore e ripropone la procedura di creazione della notifica mantenendo i dati già inseriti precedentemente
