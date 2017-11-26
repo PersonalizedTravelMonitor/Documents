@@ -26,3 +26,15 @@
 
 * Se l'utente inserisce dati sbagliati il sistema segnala l'errore all'utente che dovrà ripetere la rocedura 
 * Se l'utente è già loggato, il sistema lo riconosce e lo reindirizza automaticamente alla pagina principale
+
+## Finding alternatives to my trip
+
++ L'utente loggato si collega al servizio
++ L'utente sceglie un viaggio di suo interesse dai viaggi che sta seguendo
++ L'utente sceglie di cercare alternative al viaggio
++ Il sistema risponde con le possibili alternative (sia mezzi pubblici che privati)
++ L'utente sceglie l'alternativa che preferisce dalla lista
+
+**Alternative scenarios**
+
+* Se non ci sono alternative per un viaggio il sistema segnala all'utente l'assenza di alternative
