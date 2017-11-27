@@ -49,6 +49,27 @@
 * L'utente non completa la segnalazione con le informazioni necessarie; essa viene cancellata
 * L'utente vuole inviare ulteriori segnalazioni in merito allo stesso viaggio
 
+### Share the state of the trip
+
++ L'utente si collega al servizio
++ L'utente accede alla propria area privata eseguendo il login
++ L'utente seleziona il viaggio inserendone i dati relativi
++ L'utente sceglie di condividere lo stato del viaggio indicando il social network desiderato
++ L'utente può eventualmente inserire una descrizione 
++ Il sistema esegue l'operazione e ridirige l'utente alla pagina relativa al viaggio selezionato in precedenza
+
+**Aternative scnearios**
+
+* L'utente sbaglia ad inserire i dati relativi al viaggio. Il sistema segnala l'errore all'utente che deve ripetere l'iserimento
+* L'utente deve eseguire il login nel social network desiderato per condividere lo stato del viaggio
+
+### View users stats
+
++ L'utente si collega al servizio
++ L'utente accede alla propria area privata eseguendo il login
++ L'utente sceglie di visualizzare le proprie stitistiche
++ Il sistema ridirige l'utente alla pagina relativa alle proprie statistiche
+
 ## Admin
 
 ### Manually send a notification
@@ -70,24 +91,3 @@
 * Se l'admin non specifica un campo obbligatorio durante la creazione di una notifica, il sistema segnala l'errore e ripropone la procedura mantenendo i dati già inseriti precedentemente
 * Se l'admin non conferma la notifica nella schermata di anteprima il sistema ripropone la procedura di creazione della notifica mantenendo i dati già inseriti precedentemente
 * Se il sistema non riesce ad inviare la notifica segnala all'admin l'errore e ripropone la procedura di creazione della notifica mantenendo i dati già inseriti precedentemente 
-
-### Share the state of the trip
-
-	+ L'utente si collega al servizio
-	+ L'utente accede alla propria area privata eseguendo il login
-	+ L'utente seleziona il viaggio inserendone i dati relativi
-	+ L'utente sceglie di condividere lo stato del viaggio indicando il social network desiderato
-	+ L'utente può eventualmente inserire una descrizione 
-	+ Il sistema esegue l'operazione e ridirige l'utente alla pagina relativa al viaggio selezionato in precedenza
-
-**Aternative scnearios**
-
-	* L'utente sbaglia ad inserire i dati relativi al viaggio. Il sistema segnala l'errore all'utente che deve ripetere l'iserimento
-	* L'utente deve eseguire il login nel social network desiderato per condividere lo stato del viaggio
-
-### View users stats
-
-	+ L'utente si collega al servizio
-	+ L'utente accede alla propria area privata eseguendo il login
-	+ L'utente sceglie di visualizzare le proprie stitistiche
-	+ Il sistema ridirige l'utente alla pagina relativa alle proprie statistiche
