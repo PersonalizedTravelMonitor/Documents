@@ -132,8 +132,6 @@
 
 + L'admin si collega al servizio
 + L'admin effettua l'autenticazione inserendo le corrette credenziali di accesso
-+ L'admin è autenticato
-+ L'admin accede alla schermata per l'invio di notifiche manuali
 + L'admin sceglie il tipo di notifica da inviare (sciopero, aggiornamenti sistema, informazioni tecniche del servizio)
 + L'admin compila i campi proposti per l'invio della notifica e conferma l'operazione
 + L'admin conferma l'anteprima della notifica proposta dal sistema
@@ -147,3 +145,10 @@
 * Se l'admin non specifica un campo obbligatorio durante la creazione di una notifica, il sistema segnala l'errore e ripropone la procedura mantenendo i dati già inseriti precedentemente
 * Se l'admin non conferma la notifica nella schermata di anteprima il sistema ripropone la procedura di creazione della notifica mantenendo i dati già inseriti precedentemente
 * Se il sistema non riesce ad inviare la notifica segnala all'admin l'errore e ripropone la procedura di creazione della notifica mantenendo i dati già inseriti precedentemente
+
+### View detailed stats
++ L'admin si collega al servizio e si autentica
++ L'admin sceglie di visualizzare le statische sullo stato del sistema
++ L'admin sceglie di visualizzare le statische sugli utenti
++ L'admin sceglie di visualizzare le statische sui viaggi sorvegliati
+
