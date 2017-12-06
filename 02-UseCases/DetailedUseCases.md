@@ -3,21 +3,27 @@ Detailed Use Cases
 # Commuter - Following a trip
 
 ## Portata
+
 Applicazione utente
 
 ## Livello
+
 Obiettivo utente
 
 ## Attore Principale
+
 * Commuter: l'utente del servizio che vuole cominciare a ricevere informazioni relative ad 1 viaggio di suo interesse
 
 ## PreCondizioni
+
 L'utente si è autenticato presso il servizio
 
 ## PostCondizioni
+
 Il servizio ha correttamente registrato l'interesse dell'utente relativo ad un viaggio e ha iniziato a monitorarlo
 
 ## Scenario Principale
+
 + L'utente si collega al servizio
 + L'utente si autentica 
 + L'utente decide di registrare un nuovo viaggio affinchè esso venga monitorato

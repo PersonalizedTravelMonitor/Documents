@@ -39,7 +39,8 @@
 
 * Se non ci sono alternative per un viaggio il sistema segnala all'utente l'assenza di alternative
 
-### Report a Disruption
+### Report a Distruption
+
 + L'utente loggato sceglie un viaggio di interesse
 + L'utente sceglie di segnalare un problema
 + L'utente inserisce nella segnalazione le informazioni necessarie e invia la segnalazione

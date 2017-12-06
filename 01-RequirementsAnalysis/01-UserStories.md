@@ -1,6 +1,6 @@
 # User Stories
 
-## Pendolare
+## Viaggiatore
 
 * voglio essere notificato dei disagi che coinvolgono i *mezzi di trasporto* che mi interessano (C1)
 * voglio cercare alternative valide al mio *viaggio* in caso di *disagi* (C2)

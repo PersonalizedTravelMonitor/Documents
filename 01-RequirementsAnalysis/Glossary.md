@@ -1,4 +1,4 @@
-* **Pendolare**: utente che usa mezzi di trasporto pubblici
+* **Viaggiatore**: utente che usa mezzi di trasporto pubblici
 * **Mezzi di trasporto**: treno, metropolitana, pullman di linea, tram, ...
 * **Viaggio**: spostamento da un punto di partenza ad una destinazione utilizzando un mezzo di trasporto
 	* **Viaggio periodico**: che si ripete con una frequenza regolare
