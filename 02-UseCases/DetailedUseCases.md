@@ -1,6 +1,6 @@
 Detailed Use Cases
 
-# Commuter - Following a trip
+# Traveller - Following a trip
 
 ## Portata
 

@@ -1,6 +1,6 @@
 # Use Cases
 
-## Commuter
+## Anonymous Traveller
 
 ### Registering an account
 
@@ -16,6 +16,21 @@
 * L'utente sceglie una email malformata. Il sistema segnala l'errore all'utente che deve ripetere la procedura
 * L'utente non specifica un campo obbligatorio, il sistema segnala l'errore all'utente che deve ripetere la procedura
 
+### View a Trip Detail
++ L'utente si collega al servizio
++ L'utente sceglie di vedere i dettagli di un viaggio
++ L'utente sceglie il mezzo di trasporto
++ L'utente sceglie il punto di partenza, di arrivo e l'orario
++ L'utente sceglie da un elenco proposto dal sistema il viaggio
++ L'utente vede i dettagli del viaggio
+
+**Alternative Scenarios**
++ Non vi sono viaggi compatibili con i dati inseriti, il sistema informa l'utente
++ L'utente inserisce dei dati sbagliati o incompleti; il sistema avvisa l'utente e chiede di ripetere l'inserimento dei dati
+
+
+## Traveller
+
 ### Signin in an account
 
 + L'utente si collega al servizio  
@@ -27,9 +42,26 @@
 * Se l'utente inserisce dati sbagliati il sistema segnala l'errore all'utente che dovrà ripetere la rocedura
 * Se l'utente è già loggato, il sistema lo riconosce e lo reindirizza automaticamente alla pagina principale
 
+
+### Follow a trip
+
++ L'utente si collega al serivizo e si autentica
++ L'utente sceglie il mezzo di trasporto
++ L'utente sceglie il punto di partenza, di arrivo e l'orario
++ L'utente sceglie da un elenco proposto dal sistema il viaggio
++ L'utente conferma la scelta effettuata
+
+**Alternative scenarios**
+
+* Non ci sono viaggi disponibile per quella tratta, il sistema segnala l'impossibilità di erogare il servizio per quella tratta
+* L'utente non effettua la conferma, il viaggio viene annullato
+* Se l'utente inserisce nei campi preposti un testo non valido e conferma l'operazione il sistema segnala l'errore e ripropone la procedura
+* Se l'utente non specifica un campo obbligatorio, il sistema segnala l'errore e ripropone la procedura mantenendo i dati già inseriti precedentemente
+* L'utente specifica che si tratta di un viaggio ricorrente, il sistema chiede ogni quanto il viaggio viene effettuato
+
 ### Finding alternatives to my trip
 
-+ L'utente loggato si collega al servizio
++ L'utente si collega al serivizo e si autentica
 + L'utente sceglie un viaggio di suo interesse dai viaggi che sta seguendo
 + L'utente sceglie di cercare alternative al viaggio
 + Il sistema risponde con le possibili alternative (sia mezzi pubblici che privati)
@@ -37,7 +69,7 @@
 
 **Alternative scenarios**
 
-* Se non ci sono alternative per un viaggio il sistema segnala all'utente l'assenza di alternative
+* Se non ci sono alternative per un viaggio il sistema segnala all'utente l'assenza di viaggi compatibili
 
 ### Report a Distruption
 
@@ -52,50 +84,31 @@
 
 ### Share the state of the trip
 
-+ L'utente si collega al servizio
-+ L'utente accede alla propria area privata eseguendo il login
++ L'utente si collega al serivizo e si autentica
 + L'utente seleziona il viaggio inserendone i dati relativi
-+ L'utente sceglie di condividere lo stato del viaggio indicando il social network desiderato
++ L'utente sceglie di condividere lo stato del viaggio utilizzando un servizio di condivisione esterno
 + L'utente può eventualmente inserire una descrizione
 + Il sistema esegue l'operazione e ridirige l'utente alla pagina relativa al viaggio selezionato in precedenza
 
-**Aternative scnearios**
+**Aternative scenarios**
 
 * L'utente sbaglia ad inserire i dati relativi al viaggio. Il sistema segnala l'errore all'utente che deve ripetere l'iserimento
-* L'utente deve eseguire il login nel social network desiderato per condividere lo stato del viaggio
 
 ### View users stats
 
-+ L'utente si collega al servizio
-+ L'utente accede alla propria area privata eseguendo il login
-+ L'utente sceglie di visualizzare le proprie stitistiche
-+ Il sistema ridirige l'utente alla pagina relativa alle proprie statistiche
-
-### Follow a trip
-
-+ L'utente si collega al serivizo
-+ L'utente sceglie il punto di partenza, di arrivo e l'orario
-+ L'utente sceglie da un elenco proposto dal sistema il viaggio
-+ L'utente conferma la scelta effettuata
-
-**Alternative scenarios**
-
-* Non ci sono viaggi disponibile per quella tratta, il sistema segnala l'impossibilità di erogare il servizio per quella tratta
-* L'utente non effettua la conferma, il viaggio viene annullato
-* Se l'utente inserisce nei campi preposti un testo non valido e conferma l'operazione il sistema segnala l'errore e ripropone la procedura
-* Se l'utente non specifica un campo obbligatorio, il sistema segnala l'errore e ripropone la procedura mantenendo i dati già inseriti precedentemente
-* L'utente specifica che si tratta di un viaggio ricorrente, il sistema chiede ogni quanto il viaggio viene effettuato
++ L'utente si collega al serivizo e si autentica
++ L'utente sceglie di visualizzare le proprie statistiche
++ Il sistema visualizza informazioni e report di interesse
 
 ### Unfollow a trip
 
 + L'utente si collega al serivizo
-+ L'utente sceglie da un elenco proposto dal sistema il viaggio che intende smettere di seguire
++ L'utente sceglie dall'elenco dei viaggi seguiti quello che intende smettere di seguire
 + L'utente conferma la scelta effettuata
 
 **Alternative scenarios**
 
-* Non ci sono viaggi seguiti dall'utente, il sistema non propone nessun viaggio da unfolloware
-* Se si tratta di un viaggio ricorrente il sistema chiede se si vuole modificare la ricorrenza o eliminare tutte le ricorrenze per quel viaggio
+* Non ci sono viaggi seguiti dall'utente, il sistema non propone nessun viaggio da smettere di seguire
 
 ### Receive a notification
 
