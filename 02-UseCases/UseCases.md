@@ -135,6 +135,7 @@
 + L'admin effettua l'autenticazione inserendo le corrette credenziali di accesso
 + L'admin sceglie il tipo di notifica da inviare (sciopero, aggiornamenti sistema, informazioni tecniche del servizio)
 + L'admin compila i campi proposti per l'invio della notifica e conferma l'operazione
++ L'admin sceglie gli utenti a cui inviare la notifica (di default tutti)
 + L'admin conferma l'anteprima della notifica proposta dal sistema
 + Il sistema invia la notifica e mostra all'admin l'esito dell'operazione
 
@@ -148,6 +149,7 @@
 * Se il sistema non riesce ad inviare la notifica segnala all'admin l'errore e ripropone la procedura di creazione della notifica mantenendo i dati già inseriti precedentemente
 
 ### View detailed stats
+
 + L'admin si collega al servizio e si autentica
 + L'admin sceglie di visualizzare le statische sullo stato del sistema
 + L'admin sceglie di visualizzare le statische sugli utenti
