@@ -1,11 +1,20 @@
 # Relazione Progetto "Personalized Travel Monitor"
 
+## Initial remarks
+
+The project was carried out with the [Agile methodology](https://en.wikipedia.org/wiki/Agile_software_development) in mind, we developed incrementally and collected and refined requirements as we went forward with the development. This proved very interesting especially because we were our own stakeholder/product owner since we planned to use the software for ourselves. To ease the Agile development process we first collected user stories (again from ourselves), analyzed them and transformed them in requirements and tasks.
+Everthing went mostly according to plan, but in the end, since exams were longer than expected, we decided to not implement some small but not core features (basically a few of the *could* and *should* features) but we still carried out the initial analysis for them.
+Since we gave the planning phase enough time we were able to design the project very closely to what the implementation turned out to be. This was definitely a great thing for us and it allowed the implementation to be pretty straigth-forward, basically following design documents. 
+
 ## Useful Links
 
 * [Project Proposal on the SCORE Website](http://score-contest.org/2018/projects/ptm.php)
 * [Repo of the design and analysis documents](https://github.com/PersonalizedTravelMonitor/Documents)
 * [Repo of the code](https://github.com/PersonalizedTravelMonitor/Application)
 	* Release Tag: `1.0`
+* [Kanban Board of the project](https://github.com/PersonalizedTravelMonitor/Application/projects/1)
+* [Running instance of the project](https://travelmonitor.duckdns.org)
+	* Use account `demo@demo.com` with password `password` to try out the software; you can also create an account for yourself but this one has a few already inserted trips for testing purpose. 
 
 ## Requirement Analysis
 
@@ -23,6 +32,10 @@ For the frontend since it was very time consuming writing the style from scratch
 
 For handling the best compatibility across the development and the production environment we used [Docker](https://www.docker.com/what-docker), a container-based solution that allowed us to develop without worrying about having the same packages/operating systems. We used an existing Docker configuration, called [Laradock](http://laradock.io/)
 
+We kept track of the development using [git](https://git-scm.com/) and hosted the project on [GitHub](https://github.com/) as a public repository since we decided that there was no point in hiding the code and it could be useful to others developing for the same problematic. Mostly the development took place on the `master` branch but sometiems we created feature branches when we were making braking changes and did not want to distrupt other developers. Examples of branches are the `push-notifications` branch and `improve-UI` branch.
+
+We decided to keep track of the work to be done using a [Kanban board](https://leankit.com/learn/kanban/kanban-board/) 3-column approach, keeping track using the Projects feature of GitHub. You can [see the Kanban board here](https://github.com/PersonalizedTravelMonitor/Application/projects/1).
+
 ### Patterns
 
 Since, according to the requirement analysis, we had to develop a Web Application we decided to use an **MVC (Model View Controller)** approach for the main parts of our project. Some other parts, mainly the one that takes care of periodically checking if there are delays/events for the registered trip was developed similar to a **Broker/Worker** structure but it is a bit simpler, implemented, for example, without queues or complex services to hanle the tasks.
@@ -37,3 +50,9 @@ In the design pattern compartment we used a few, mostly the one enforced by the 
 * **Builder Pattern**, used to create the queries to be executed by the ORM. Provided by Laravel.
 * **Facade**, used for implementing the different data sources so that they expose a common interface. It was used together with the **Template Class** pattern.
 * **Publish/Subscribe**, for handling notifications and application-wide communication.
+
+## Testing locally the project
+
+In the [code repository](https://github.com/PersonalizedTravelMonitor/Application/blob/master/readme.md#development-setup) we included some instructions on how to build and test the software locally. There are a few requirements: [Docker](https://docker.com), [Docker Compose](https://docs.docker.com/compose/), [git](https://git-scm.com/).
+
+Since it is a pretty long process to build it locally (there are a few steps to follow and it can take some times to download all the packages and docker images) we decided to [deploy the project here](travelmonitor.duckdns.org) for you to try out. We also created a demo account (`demo@demo.com` with password `password`) which has admin permissions and a few trips already planned. 
