@@ -3,8 +3,9 @@
 # Functional requirements 
 
 * *Requirement [Expected Complexity (1-5), MoSCoW Level]*
+*(RelatedUser story)*
 
-(1)
+(C1)
 
 * Allow the user to follow trips *[4, M]*
 	* To follow trips on a one-time basis *[3, M]*
@@ -13,13 +14,13 @@
 * Allow the user to stop following a trip *[2, M]*
 * Send notifications to the user based to distruptions affecting trips he/she is following *[2/3, M]*
 
-(2)
+(C2)
 
 * Automatically find alternatives to a given trip affected by distruptions *[5, C]*
 	* Find alternative public transport solutions 
 	* Find alternative private transport solutions
 
-(3)
+(C3)
 
 * Allow the user to configure which notifications he/she should receive *[3, C]*
 	* According to the severity of the issue
@@ -29,18 +30,18 @@
 	* Frequency
 	* Maximum number
 
-(4)
+(C4)
 
 * Recognize planned distruptions of the service and send notifications to the users at least two days before the event (or as soon as possible if the event is happening in less than two days) *[5, S]*
 
-(6)
+(C5)
 
 * Allow the user to report unplanned distruptions involving his trip *[3, S]*
 	* The reports will be divided in categories (Delay, Suppression, Other)
 	* It will be possibile to also add an optional short description
 * Allow the user to read other's (and his) report involving transport lines of his interest *[2, S]*
 
-(7)
+(C6)
 
 * Store statistics about distruptions on trips followed by users *[3, C]*
 	* Average Delay
@@ -48,36 +49,39 @@
 	* On his trips
 	* On his transport lines of interest
 
-(8)
+(C7)
 
 * Allow the user to register to the system using username, email and password *[3, M]*
 * Allow the user to register using external authentication services (Google, Facebook) *[4, C]*
 
-(10)
+(C9)
 
 * Recognize distruptions involving a whole transport line (when possible) in the moments before the trip *[4/5, S]*
 * Send notifications on issues involving a whole transport line *[2/3, S]*
 
-(11)
+(C10)
 
 * Allow the user to share the status of a trip with external services (Facebook, Twitter, Email, Whatsapp) *[2, C/W]*
 
-(12)
+(C11)
 
 * Allow the user to contact the administrator through email *[1, S]*
 
 (A1)
 
-* Permettere all'amministratore di inviare notifiche testuali agli utenti *[2/3, C]*
-* Peremttere all'amministratore di visualizzare inforazioni sullo stato del sistema, utenti, viaggi segnalazioni in una apposita sezione *[3, C]*
-* Permettere all'amministratore di modificare le segnalazioni degli utenti *[3, S]* 
-* Permettere all'amministratore di eliminare le segnalazioni degli utenti *[2, S]*
+* Allow the administrator to send textual notification to the users *[2/3, C]*
+
+(A2)
+* Allow the administrator to see data about the state of the system, users, trips in a specific section *[3, C]*
+
+(A3)
+* Allow the administrator to change or delete user's report*[3, S]* 
 
 # Non-functional requirements
 
 ## Interoperability
 
-* APIs for external and internal use will be provided by the system, allowing for all the user-functionalities to be perfomed programmatically, also allowing external integration
+* APIs for external and internal use will be provided by the system, allowing for all the user-functionalities to be performed programmatically, also allowing external integration
 
 ## Performance
 
