@@ -1,6 +1,8 @@
-# User Stories
+# Requirements Analysis
 
-## Commuter
+## User Stories
+
+### Commuter
 
 I want to:
 
@@ -17,10 +19,11 @@ I want to:
 * be able to to communicate with the system's administrator for reporting problems or give suggestions (C11)
 
 
-## Administrator
+### Administrator
 
 I want to:
 
 * send notification to the users regarding planned disruptions, technical informations or updates to the system (A1)
 * see a report and data about users, trips and usage of the system (A2)
 * change/delete user messages to avoid improper use (A3)
+

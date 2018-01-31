@@ -1,8 +1,8 @@
-# Use Cases
+## Use Cases
 
-## Anonymous Traveller
+### Anonymous Traveler
 
-### Registering an account
+#### Registering an account
 
 + L'utente si collega al servizio
 + L'utente sceglie di registrarsi
@@ -16,7 +16,8 @@
 * L'utente sceglie una email malformata. Il sistema segnala l'errore all'utente che deve ripetere la procedura
 * L'utente non specifica un campo obbligatorio, il sistema segnala l'errore all'utente che deve ripetere la procedura
 
-### View a Trip Detail
+#### View a Trip Detail
+
 + L'utente si collega al servizio
 + L'utente sceglie di vedere i dettagli di un viaggio
 + L'utente sceglie il mezzo di trasporto
@@ -29,11 +30,11 @@
 + L'utente inserisce dei dati sbagliati o incompleti; il sistema avvisa l'utente e chiede di ripetere l'inserimento dei dati
 
 
-## Traveller
+### Traveller
 
-### Signin in an account
+#### Signin in an account
 
-+ L'utente si collega al servizio  
++ L'utente si collega al servizio
 + L'utente sceglie di fare l'autenticazione
 + L'utente inserisce i dati e il sistema, dopo averli verificati, ridireziona l'utente alla pagina principale
 
@@ -43,7 +44,7 @@
 * Se l'utente è già loggato, il sistema lo riconosce e lo reindirizza automaticamente alla pagina principale
 
 
-### Follow a trip
+#### Follow a trip
 
 + L'utente si collega al serivizo e si autentica
 + L'utente sceglie il mezzo di trasporto
@@ -59,7 +60,7 @@
 * Se l'utente non specifica un campo obbligatorio, il sistema segnala l'errore e ripropone la procedura mantenendo i dati già inseriti precedentemente
 * L'utente specifica che si tratta di un viaggio ricorrente, il sistema chiede ogni quanto il viaggio viene effettuato
 
-### Finding alternatives to my trip
+#### Finding alternatives to my trip
 
 + L'utente si collega al serivizo e si autentica
 + L'utente sceglie un viaggio di suo interesse dai viaggi che sta seguendo
@@ -71,7 +72,7 @@
 
 * Se non ci sono alternative per un viaggio il sistema segnala all'utente l'assenza di viaggi compatibili
 
-### Report a Distruption
+#### Report a Distruption
 
 + L'utente loggato sceglie un viaggio di interesse
 + L'utente sceglie di segnalare un problema
@@ -82,7 +83,7 @@
 * L'utente non completa la segnalazione con le informazioni necessarie; essa viene cancellata
 * L'utente vuole inviare ulteriori segnalazioni in merito allo stesso viaggio
 
-### Share the state of the trip
+#### Share the state of the trip
 
 + L'utente si collega al serivizo e si autentica
 + L'utente seleziona il viaggio inserendone i dati relativi
@@ -94,13 +95,13 @@
 
 * L'utente sbaglia ad inserire i dati relativi al viaggio. Il sistema segnala l'errore all'utente che deve ripetere l'iserimento
 
-### View users stats
+#### View users stats
 
 + L'utente si collega al serivizo e si autentica
 + L'utente sceglie di visualizzare le proprie statistiche
 + Il sistema visualizza informazioni e report di interesse
 
-### Unfollow a trip
+#### Unfollow a trip
 
 + L'utente si collega al serivizo
 + L'utente sceglie dall'elenco dei viaggi seguiti quello che intende smettere di seguire
@@ -110,9 +111,7 @@
 
 * Non ci sono viaggi seguiti dall'utente, il sistema non propone nessun viaggio da smettere di seguire
 
-### Receive a notification
-
-  >Bisogna mettere come prerequisito che lutente abbia le notifiche del servizio in uso abilitate? tipo browser ecc. quindi con login a monte'
+#### Receive a notification
 
 + L'utente visualizza la notifica inviata dal sistema
 + L'utente seleziona la notifica
@@ -122,11 +121,11 @@
 
 * L'utente ignora la notifica e non la apre, il sistema non visualizzerà il dettaglio della stessa
 
-### Contact the administrator
+#### Contact the administrator
 
 + L'utente invia una email all'indirizzo dell'amministratore di sistema
 
-### Configure notification frequency and type
+#### Configure notification frequency and type
 
 + L'utente accede al servizio
 + L'utente sceglie la frequenza delle notifiche che riceverà
@@ -138,11 +137,9 @@
 
 * Se la scelta non va a buon fine il sistema preserva le impostazioni precedenti
 
+### Admin
 
-
-## Admin
-
-### Manually send a notification
+#### Manually send a notification
 
 + L'admin si collega al servizio
 + L'admin effettua l'autenticazione inserendo le corrette credenziali di accesso
@@ -161,7 +158,7 @@
 * Se l'admin non conferma la notifica nella schermata di anteprima il sistema ripropone la procedura di creazione della notifica mantenendo i dati già inseriti precedentemente
 * Se il sistema non riesce ad inviare la notifica segnala all'admin l'errore e ripropone la procedura di creazione della notifica mantenendo i dati già inseriti precedentemente
 
-### View detailed stats
+#### View detailed stats
 
 + L'admin si collega al servizio e si autentica
 + L'admin sceglie di visualizzare le statische sullo stato del sistema
