@@ -2,85 +2,98 @@
 
 ### Traveller - Following a trip
 
-#### Portata
+#### Range
 
-Applicazione utente
+User Application 
 
-#### Livello
+#### Level
 
-Obiettivo utente
+User scope
 
-#### Attore Principale
+#### Main Actor
 
-* Commuter: l'utente del servizio che vuole cominciare a ricevere informazioni relative ad 1 viaggio di suo interesse
+* Commuter: the user of the service that wants to start receiving pieces of information regarding 1 trip of interest 
 
-#### PreCondizioni
+#### Pre-Conditions
 
-L'utente si è autenticato presso il servizio
+The user has logged-in in the system
 
-#### PostCondizioni
+#### Post-Conditions
 
-Il servizio ha correttamente registrato l'interesse dell'utente relativo ad un viaggio e ha iniziato a monitorarlo
+The service correctly registered the interest of the user regarding a trip and has started monitorig it
 
-#### Scenario Principale
+#### Main Scenario
 
-+ L'utente si collega al servizio
-+ L'utente si autentica
-+ L'utente decide di registrare un nuovo viaggio affinchè esso venga monitorato
-+ L'utente inserisce il tipo di mezzo che intende usare
-+ L'utente inserisce "il punto" iniziale per il proprio viaggio
-+ L'utente inserisce la destinazione del viaggio
-+ L'utente inserisce giorno, orario del viaggio
-+ Il sistema mostra all'utente l'elenco dei viaggi compatibili con la scelta effettuata
-+ L'utente seleziona un viaggio
-+ L'utente conferma la selezione
-+ Il sistema conferma all'utente la riuscita dell'operazione
++ The user connects to the system
++ The user logs in
++ The user decides to register a new trip to be monitored
++ The user chooses the type of vehicle that wants to use
++ The user inserts the departing location of the trip
++ The user inserts the destination of the trip
++ The user inserts the day and the time of the trip
++ The system shows to the user a list of the trips compatible with the data given in input
++ The user selects a trip from the list
++ The user confirms the selection
++ The system confirms to the user that the subscription has been completed 
 
-#### Estensioni
+#### Extensions
 
-##### Scenario alternativo di Successo: Già loggato
-... punto 1
-+ L'utente è già autenticato e quindi riconosciuto dal sistema
-... resto delle operazioni
+##### Alternative success scenario: Already logged-in
 
-##### Scenario alternativo di Successo: Viaggio Ricorrente
-.... dopo la selezione
-+ L'utente specifica che il viaggio è di tipo ricorrente
-+ L'utente indica l'elenco dei giorni in cui il viaggio gli interessa
-... resto delle operazioni
++ The user connects to the system
++ The user is already logged in and therefore recognized by the system
++ same operations as the main scenario
 
-##### Scenario alternativo di Fallimento: Stazione non Riconosciuta
-... uguale fino al mezzo
-+ L'utente inserisce un punto di partenza o di arrivo che non sono riconosciuti dal sistema
-+ Il sistema comunica tramite un messaggio di errore l'incapacità di erogare il servizio
+##### Alternative success scenario: Recourring Trip
 
-##### Scenario alternativo di Fallimento: Nessun viaggio disponibile
-... uguale fino a scelta di giorno e orario
-+ Il sistema non individua un viaggio compatibile con la scelta dell'utente e ne informa l'utente
++ same operations as the main scenario until point 9
++ The user selects a trip from the list
++ The user specifies that the trip is recurring
++ The user selects from a list the days in which the trip should be monitored
++ The user confirms the choice
++ The system confirms to the user that the subscription has been completed 
 
-##### Scenario alternativo di Fallimento: Mancata Conferma
-... uguale fino alla scelta del viaggio
-+ L'utente non conferma l'operazione che quindi viene considerata nulla
+##### Alternative failure scenario: Unrecognized station
 
++ same operations as the main scenario until point 4
++ The user inserts the departing location of the trip
++ The user inserts the destination of the trip
++ The system doesn't find a compatible solution with the data given in input the; an error message will be shown to the user
 
-#### Requisiti speciali
-Requisiti non funzionali correlati
+##### Alternative failure scenario: No available trip
+
++ same operations as the main scenario until point 6
++ The user inserts the day and the time of the trip
++ The system doesn't find a compatible solution with the data given in input the; an error message will be shown to the user
+
+##### Alternative failure scenario: No confirmation
+
++ same operations as the main scenario until point 9
++ The user selects a trip from the list
++ The user doesn't confirm the operation that will be discarded
+
+#### Special Requirements
 
 ##### Performance
-* Il sistema deve proporre l'elenco delle soluzioni compatibili in meno di 10 secondi
-* Il sistema deve rilevare la presenza di errori nei dati inseriti dall'utente in meno di 5 secondi
+
+* The system must show the list of compatible solutions in less than 10 seconds
+* The system should detect the presence of errors in the data inserted by the user in less than 5 seconds
 
 ##### Usabilità
-* L'interfaccia deve essere facilmente comprensibile
-* L'interfaccia deve adattarsi alla fruizione attraverso dispositivi di diversa natura (smartphone, tablet e desktop)
+
+* The user interface must be easily understandable
+* The interface must adapt to different types of devices (smartphone, tablet and desktop)
 
 
-#### Elenco delle varianti tecnologiche
-niente
+#### Technological variants
 
-#### Elenco delle varianti input/output
-niente
+nothinge
 
-#### Frequenza di ripetizione
-Una decina di volte al giorno per singolo utente
+#### I/O variants
+
+nothing
+
+#### Frequency of use
+
+Around ten times a day per user
 
