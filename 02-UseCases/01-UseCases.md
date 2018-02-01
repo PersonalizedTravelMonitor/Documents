@@ -26,6 +26,7 @@
 + The user will see the entire list of compatible solutions found with their details
 
 **Alternative Scenarios**
+
 + No compatible solutions were found, an error message will be shown
 + The user inserts incomplete data; no compatible solutions will be found
 

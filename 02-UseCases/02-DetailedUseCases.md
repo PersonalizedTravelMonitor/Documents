@@ -2,31 +2,20 @@
 
 ### Traveller - Following a trip
 
-#### Range
+* **Range**: User Application
+* **Level**: User scope
+* **Priority**: Highest
+* **Main Actor**: Commuter, the user of the service that wants to start receiving pieces of information regarding 1 trip of interest
+* **Pre-Conditions**: The user has logged-in in the system
+* **Post-Conditions**: The service correctly registered the interest of the user regarding a trip and has started monitorig it
+* **Frequency of use**: no more than 5 times per user
 
-User Application 
+Other:
 
-#### Level
+* **Technological variants**: nothing
+* **I/O variants**: nothing
 
-User scope
-
-#### Priority 
-
-Highest
-
-#### Main Actor
-
-* Commuter: the user of the service that wants to start receiving pieces of information regarding 1 trip of interest 
-
-#### Pre-Conditions
-
-The user has logged-in in the system
-
-#### Post-Conditions
-
-The service correctly registered the interest of the user regarding a trip and has started monitorig it
-
-#### Main Scenario
+### Main Scenario
 
 + The user connects to the system
 + The user logs in
@@ -38,7 +27,7 @@ The service correctly registered the interest of the user regarding a trip and h
 + The system shows to the user a list of the trips compatible with the data given in input
 + The user selects a trip from the list
 + The user confirms the selection
-+ The system confirms to the user that the subscription has been completed 
++ The system confirms to the user that the subscription has been completed
 
 #### Extensions
 
@@ -55,7 +44,7 @@ The service correctly registered the interest of the user regarding a trip and h
 + The user specifies that the trip is recurring
 + The user selects from a list the days in which the trip should be monitored
 + The user confirms the choice
-+ The system confirms to the user that the subscription has been completed 
++ The system confirms to the user that the subscription has been completed
 
 ##### Alternative failure scenario: Unrecognized station
 
@@ -64,7 +53,6 @@ The service correctly registered the interest of the user regarding a trip and h
 + The user inserts the destination of the trip
 + The system doesn't find a compatible solution with the data given in input the; an error message will be shown to the user
 
->>>>>>> Translate the document to english, improve document's structure
 ##### Alternative failure scenario: No available trip
 
 + same operations as the main scenario until point 6
@@ -84,21 +72,9 @@ The service correctly registered the interest of the user regarding a trip and h
 * The system must show the list of compatible solutions in less than 10 seconds
 * The system should detect the presence of errors in the data inserted by the user in less than 5 seconds
 
-##### Usabilità
+##### Usability
 
 * The user interface must be easily understandable
 * The interface must adapt to different types of devices (smartphone, tablet and desktop)
 
-
-#### Technological variants
-
-nothinge
-
-#### I/O variants
-
-nothing
-
-#### Frequency of use
-
-Around ten times a day per user
 
