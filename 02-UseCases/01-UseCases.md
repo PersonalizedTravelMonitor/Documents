@@ -55,52 +55,50 @@
 
 **Alternative scenarios**
 
-* Non ci sono viaggi disponibile per quella tratta, il sistema segnala l'impossibilità di erogare il servizio per quella tratta
-* L'utente non effettua la conferma, il viaggio viene annullato
-* Se l'utente inserisce nei campi preposti un testo non valido e conferma l'operazione il sistema segnala l'errore e ripropone la procedura
-* Se l'utente non specifica un campo obbligatorio, il sistema segnala l'errore e ripropone la procedura mantenendo i dati già inseriti precedentemente
-* L'utente specifica che si tratta di un viaggio ricorrente, il sistema chiede ogni quanto il viaggio viene effettuato
+* If no compatible solutions are found an error message will be shown to the user
+* The user doesn't confirm the selection, the operation will be discarded
+* The user doesn't insert all the required informations and therefore no solutions will researched
+* The user specifies that the trip is recurring on multiple days; the user will insert the days in which the trip should be monitored
 
 #### Finding alternatives to my trip
 
-+ L'utente si collega al serivizo e si autentica
-+ L'utente sceglie un viaggio di suo interesse dai viaggi che sta seguendo
-+ L'utente sceglie di cercare alternative al viaggio
-+ Il sistema risponde con le possibili alternative (sia mezzi pubblici che privati)
-+ L'utente sceglie l'alternativa che preferisce dalla lista
++ The user connects and logs-in into the system
++ The user selects a trip from the list of trips that he's following 
++ The user chooses to select alternative to that trip inserting similar information
++ The system shows a list of compatible solutions found
++ The user chooses one of the solutions 
 
 **Alternative scenarios**
 
-* Se non ci sono alternative per un viaggio il sistema segnala all'utente l'assenza di viaggi compatibili
+* If no compatible solutions are found an error message will be shown to the user
 
 #### Report a Distruption
 
-+ L'utente loggato sceglie un viaggio di interesse
-+ L'utente sceglie di segnalare un problema
-+ L'utente inserisce nella segnalazione le informazioni necessarie e invia la segnalazione
-+ Il sistema recepisce la segnalazione e lo comunica all'utente
++ The logged-in user chooses a trip of interest 
++ The user chooses to report an information
++ The user inserts some information and confirms his intentio to send the message
++ The system receives and shows to everyone interested in the same trip the user's report
 
 **Alternative scenarios**
-* L'utente non completa la segnalazione con le informazioni necessarie; essa viene cancellata
-* L'utente vuole inviare ulteriori segnalazioni in merito allo stesso viaggio
+* The user doesn't give a confirmation; the report will be discarded
+* The user wants to send multiple report and therefore will perform this operation multiple times
 
 #### Share the state of the trip
 
-+ L'utente si collega al serivizo e si autentica
-+ L'utente seleziona il viaggio inserendone i dati relativi
-+ L'utente sceglie di condividere lo stato del viaggio utilizzando un servizio di condivisione esterno
-+ L'utente può eventualmente inserire una descrizione
-+ Il sistema esegue l'operazione e ridirige l'utente alla pagina relativa al viaggio selezionato in precedenza
++ The user connects and logs-in into the system
++ The user selects a trip from the list of the trips that is following
++ The user chooses to share the state of the trip using an external sharing service
++ The system performs the required operation and redirects the user the user to the trips'detail page
 
 **Aternative scenarios**
 
-* L'utente sbaglia ad inserire i dati relativi al viaggio. Il sistema segnala l'errore all'utente che deve ripetere l'iserimento
+* The user isn't following any trip; he must register a trip before sharing its state 
 
 #### View users stats
 
-+ L'utente si collega al serivizo e si autentica
-+ L'utente sceglie di visualizzare le proprie statistiche
-+ Il sistema visualizza informazioni e report di interesse
++ The user connects and logs-in into the system
++ The user chooses to see his personal statistics
++ The system shows information and report that regards the user
 
 #### Unfollow a trip
 
@@ -110,15 +108,12 @@
 
 **Alternative scenarios**
 
-* Non ci sono viaggi seguiti dall'utente, il sistema non propone nessun viaggio da smettere di seguire
+* There are no trips followed by the user, the operation is not possible
 
 #### Receive a notification
 
 + The user's device shows to the user the notification sent by the system
 
-**Alternative scenarios**
-
-* L'utente ignora la notifica e non la apre, il sistema non visualizzerà il dettaglio della stessa
 
 #### Contact the administrator
 
@@ -128,13 +123,13 @@
 
 + The user connects to the system
 + The user selects the frequency of the notifications that will be sent to him
-+ The user di notifiche a cui sarà esposto
-+ L'utente conferma la scelta effettuata
-+ Il sistema conferma il successo dell'operazione
++ The user chooses the type of notification that matters to him
++ The user confirms the selection 
++ The system confirms that the modifications took places
 
 **Alternative scenarios**
 
-* Se la scelta non va a buon fine il sistema preserva le impostazioni precedenti
+* If the change is not confirmed the system will keep the last settings 
 
 ### Admin
 
