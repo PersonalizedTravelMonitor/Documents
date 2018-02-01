@@ -4,7 +4,7 @@
 
 #### Registering an account
 
-+ The user connects to the system 
++ The user connects to the system
 + The user chooses to register
 + The users inserts an username, an email and a password
 + The system confirms that the registration has been performed
@@ -20,10 +20,10 @@
 #### View a Trip Detail
 
 + The user connects to the system
-+ The user chooses to see the details of a trip 
++ The user chooses to see the details of a trip
 + The user chooses the vehicle type
 + The user chooses departing and arrival location and time
-+ The user will see the entire list of compatible solutions found with their details 
++ The user will see the entire list of compatible solutions found with their details
 
 **Alternative Scenarios**
 + No compatible solutions were found, an error message will be shown
@@ -34,7 +34,7 @@
 #### Signin in an account
 
 + The user connects to the system
-+ The system decides to log-in 
++ The system decides to log-in
 + The user inserts the required data
 + The system will check the data and redirect the user to the starting page
 
@@ -50,7 +50,7 @@
 + The user chooses the vehicle type
 + The user chooses departing and arrival location and time
 + The user will see the entire list of compatible solutions found
-+ The user selects one of the solutions proposed 
++ The user selects one of the solutions proposed
 + The user confirms the choice
 
 **Alternative scenarios**
@@ -105,8 +105,8 @@
 #### Unfollow a trip
 
 + The user connects to the system
-+ The user selects, from the list of the trips followed by himself, the one that doesn't want to follow anymore 
-+ The user confirms the selection 
++ The user selects, from the list of the trips followed by himself, the one that doesn't want to follow anymore
++ The user confirms the selection
 
 **Alternative scenarios**
 
@@ -114,7 +114,7 @@
 
 #### Receive a notification
 
-+ The user's device shows to the user the notification sent by the system 
++ The user's device shows to the user the notification sent by the system
 
 **Alternative scenarios**
 
@@ -140,27 +140,22 @@
 
 #### Manually send a notification
 
-+ L'admin si collega al servizio
-+ L'admin effettua l'autenticazione inserendo le corrette credenziali di accesso
-+ L'admin sceglie il tipo di notifica da inviare (sciopero, aggiornamenti sistema, informazioni tecniche del servizio)
-+ L'admin compila i campi proposti per l'invio della notifica e conferma l'operazione
-+ L'admin sceglie gli utenti a cui inviare la notifica (di default tutti)
-+ L'admin conferma l'anteprima della notifica proposta dal sistema
-+ Il sistema invia la notifica e mostra all'admin l'esito dell'operazione
++ The admin connects to the system
++ The admin chooses the type of notification to send
++ The admin compile the form for notifications and confirm the operation
++ The admin chooses the users to send the notification to (all by default)
++ The system send the notification to the users
 
 **Alternative scenarios**
 
-* Se l'admin inserisce dati di autenticazione sbagliati il sistema segnala l'errore e ripropone la procedura di autenticazione
-* Se l'admin è già loggato, il sistema lo riconosce e lo reindirizza automaticamente alla pagina principale
-* Se l'admin inserisce nei campi preposti alla creazione di una notifica un testo non valido e conferma l'operazione il sistema segnala l'errore e ripropone la procedura
-* Se l'admin non specifica un campo obbligatorio durante la creazione di una notifica, il sistema segnala l'errore e ripropone la procedura mantenendo i dati già inseriti precedentemente
-* Se l'admin non conferma la notifica nella schermata di anteprima il sistema ripropone la procedura di creazione della notifica mantenendo i dati già inseriti precedentemente
-* Se il sistema non riesce ad inviare la notifica segnala all'admin l'errore e ripropone la procedura di creazione della notifica mantenendo i dati già inseriti precedentemente
+* The admin inserts wrong information; the system will show an error message and ask the user to repeat the operation
+* The admin is already logged in; the system will recognize him and will redirect him to the starting page
+* If the admin don't compile all the fields of the form for the notification, the system reports the error
+* If the notification send fails the system reports the error with an alert.
 
 #### View detailed stats
 
-+ L'admin si collega al servizio e si autentica
-+ L'admin sceglie di visualizzare le statische sullo stato del sistema
-+ L'admin sceglie di visualizzare le statische sugli utenti
-+ L'admin sceglie di visualizzare le statische sui viaggi sorvegliati
-
++ The admin connects to the system
++ The admin chooses to see the system statistics
++ The admin chooses to see the users statistics
++ The admin chooses to see the programmed trips statistics
