@@ -31,11 +31,11 @@ Since we gave the planning phase enough time we were able to design the project 
 
 Before beginning the project we defined a Gantt chart to plan the evolution of the project.
 
-TODO: INSERT GANTT
+![](Images/Gantt-old.png "Initial Gantt Diagram")
 
 During the development we updated the Gantt and in the end this was how the project turned out to be.
 
-TODO: INSERT GANTT
+![](Images/Gantt-old.png "Final Gantt Diagram")
 
 ## Useful Links
 

@@ -79,8 +79,7 @@ Since it is a pretty long process to build it locally (there are a few steps to 
 
 To keep track of code quality we used [SonarQube](https://www.sonarqube.org/) together with [SonarQube Scanner](https://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Scanner). This proven quite a useful tools, since it allowed us to keep track of the code as it grew and improve it as necessary. We aimed (and got) 0 bugs and `A` level for code smells; there are still some code smells left in the code (about 20, *all* about string literals not being represented as constants) especially related to a particular class: `App\ExternalAPIs\TrenordSearchResultsCleaner`. It is possible to fix them just to please SonarQube, but it would be *wrong* since that class is responsible for walking through an object with many different fields and removing the unnecessary ones: having constants insteaad of strings would not remove the complexity of the code. The same goes for the same kind of code smells in the other classes.
 
+![](Images/SonarQube.png "SonarQube View")
+
 To make SonarQube work with the project we had to create a `sonar-project.properties` file that specifies in which directories SonarQube had to look for code. After starting SonarQube and running `sonar-scanner` inside the project folder the code gets analized and the results are served in the Web Inteface of SonarQube.
-
-
-TODO: add screenshot of sonarqube
 
