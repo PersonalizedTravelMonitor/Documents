@@ -27,6 +27,8 @@ Everthing went mostly according to plan, but in the end, since exams were longer
 
 Since we gave the planning phase enough time we were able to design the project very closely to what the implementation turned out to be. This was definitely a great thing for us and it allowed the implementation to be pretty straigth-forward, basically following design documents. The only changes we had to make to the diagrams after the development were only related to naming differnces, the general workflow was still the same.
 
+At this moment the only public transportation provider that was implemented is Trenord. The next providers that will be added are Trenitalia and ATM.
+
 ## Timeline
 
 Before beginning the project we defined a Gantt chart to plan the evolution of the project.

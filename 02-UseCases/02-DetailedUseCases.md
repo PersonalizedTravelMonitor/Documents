@@ -1,3 +1,5 @@
+\newpage
+
 ## Detailed Use Cases
 
 ### Traveller - Following a trip
@@ -15,7 +17,7 @@ Other:
 * **Technological variants**: nothing
 * **I/O variants**: nothing
 
-### Main Scenario
+#### Main Scenario
 
 + The user connects to the system
 + The user logs in

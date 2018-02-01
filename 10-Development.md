@@ -14,6 +14,10 @@ We kept track of the development using [git](https://git-scm.com/) and hosted th
 
 We decided to keep track of the work to be done using a [Kanban board](https://leankit.com/learn/kanban/kanban-board/) 3-column approach, keeping track using the Projects feature of GitHub. You can [see the Kanban board here](https://github.com/PersonalizedTravelMonitor/Application/projects/1).
 
+## Database Schema
+
+![](Images/DbSchema.png)
+
 ## Project structure
 
 The project is organized as a [standard Laravel application](https://laravel.com/docs/5.5/structure), with a few custom packages and namespaces defined for our use case:
@@ -77,9 +81,89 @@ Since it is a pretty long process to build it locally (there are a few steps to 
 
 ## SonarQube Integration
 
-To keep track of code quality we used [SonarQube](https://www.sonarqube.org/) together with [SonarQube Scanner](https://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Scanner). This proven quite a useful tools, since it allowed us to keep track of the code as it grew and improve it as necessary. We aimed (and got) 0 bugs and `A` level for code smells; there are still some code smells left in the code (about 20, *all* about string literals not being represented as constants) especially related to a particular class: `App\ExternalAPIs\TrenordSearchResultsCleaner`. It is possible to fix them just to please SonarQube, but it would be *wrong* since that class is responsible for walking through an object with many different fields and removing the unnecessary ones: having constants insteaad of strings would not remove the complexity of the code. The same goes for the same kind of code smells in the other classes.
+To keep track of code quality we used [SonarQube](https://www.sonarqube.org/) together with [SonarQube Scanner](https://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Scanner). This proven quite a useful tools, since it allowed us to keep track of the code as it grew and improve it as necessary. We aimed (and got) 0 bugs and `A` level for code smells; there are still some code smells left in the code (about 20, *all* about string literals not being represented as constants) especially related to a particular class: `App\ExternalAPIs\TrenordSearchResultsCleaner`.
+
+It is possible to fix them just to please SonarQube, but it would be *wrong* since that class is responsible for walking through an object with many different fields and removing the unnecessary ones: having constants insteaad of strings would not remove the complexity of the code. The same goes for the same kind of code smells in the other classes.
 
 ![](Images/SonarQube.png "SonarQube View")
 
 To make SonarQube work with the project we had to create a `sonar-project.properties` file that specifies in which directories SonarQube had to look for code. After starting SonarQube and running `sonar-scanner` inside the project folder the code gets analized and the results are served in the Web Inteface of SonarQube.
+
+## Adding new information providers
+
+The system was designed and developed to be as extensible as possible. It is possible to add as many Information Providers (different transportation services) as necessary, given that you know how to extract informations from the.
+
+### General Steps
+
++ Analyze the service and the information provided
++ Create a Database migration for the provider's model istances
++ Create Models
++ Create a SearchProvider
++ Update the TripPartController
++ Associate the dedicated SearchProvider class into the generic SearchController
++ Create external API for retrieving data
++ Display the results into dedicated views
+
+### Analyze the service and the information that could be used by PTM
+
+Since the project should help travelers that use transportation vehicles you must assure that you can always identify for each new information provider:
+
++ A departing point
++ An arrival point
++ A generic time around which the service will be provided
+
+Inserted that, a list of a solutions will be researched and displayed to the users, via the `searchSolutions` method.
+
+Tipically, the first two pieces of information are known locations suchs as public stations; in this case it should be possible to retrieve a collection of those locations to help the user selecting them.
+
+### Create a DB migration for the provider's model istances
+
+You need to create a migration in `app/database/migrations` via the `php artisan make:migration` command.
+
+A table will be added to the DB in which all the additional information identified at the previous step will be recorded.
+
+### Create a Model class
+
+Create `/app/Models/TripParts/<SpecificProvider>TripPart.php`
+
+Example: `/app/Models/TripParts/AtmTripPart.php`
+
+Every new specialized TripPart will be represented as a specific class in the application.
+Each of those classes must respect the polymorhipc relationthip with the abstract class `TripPart` and to do so they must include the function:
+
+```php
+public function tripPart()
+{
+	return $this->morphOne('App\TripPart', 'details');
+}
+```
+
+### Create a specific SearchProvider
+
+You must create a SearchProvider class, `app/SearchProviders/<SpecificProvider>SearchInfoProvider.php`
+
+Example: `app/SearchProviders/TrenordSearchInfoProvider.php`
+
+This class will provide 3 methods, used to handle search requests from the user:
+
++ `autoCompleteFrom`
++ `autoCompleteTo`
++ `searchSolutions`
+
+### Associate the dedicated SearchProvider class into the SearchController
+
+In the class `SearchInfoController` you must add to the dictionary `infoSources` the class that will be responsible for the search, together with a label to be used when routing informations to that source.
+
+### Add a dedicated handler inside TripPart controller
+
+This function will handle insertion operations on the specific trip part offered by the provider.
+
+### Display the results into dedicated views
+
+Create `app/views/trips/<specificTripPartView>.blade.php`
+
+Example: `app/views/trips/createTrain.blade.php`
+
+To offer the best user experiences, some specific views will be created to display the information related to the solutions of that specif provider.
+Those views will be included into the layout of the applications.
 

@@ -1,4 +1,12 @@
+\newpage
+
 ## Use Cases
+
+### Diagrams
+
+![](02-UseCases/Commuter.png)
+
+![](02-UseCases/Admin.png)
 
 ### Anonymous Traveler
 
@@ -64,10 +72,10 @@
 #### Finding alternatives to my trip
 
 + The user connects and logs-in into the system
-+ The user selects a trip from the list of trips that he's following 
++ The user selects a trip from the list of trips that he's following
 + The user chooses to select alternative to that trip inserting similar information
 + The system shows a list of compatible solutions found
-+ The user chooses one of the solutions 
++ The user chooses one of the solutions
 
 **Alternative scenarios**
 
@@ -75,7 +83,7 @@
 
 #### Report a Distruption
 
-+ The logged-in user chooses a trip of interest 
++ The logged-in user chooses a trip of interest
 + The user chooses to report an information
 + The user inserts some information and confirms his intentio to send the message
 + The system receives and shows to everyone interested in the same trip the user's report
@@ -93,7 +101,7 @@
 
 **Aternative scenarios**
 
-* The user isn't following any trip; he must register a trip before sharing its state 
+* The user isn't following any trip; he must register a trip before sharing its state
 
 #### View users stats
 
@@ -125,12 +133,12 @@
 + The user connects to the system
 + The user selects the frequency of the notifications that will be sent to him
 + The user chooses the type of notification that matters to him
-+ The user confirms the selection 
++ The user confirms the selection
 + The system confirms that the modifications took places
 
 **Alternative scenarios**
 
-* If the change is not confirmed the system will keep the last settings 
+* If the change is not confirmed the system will keep the last settings
 
 ### Admin
 
@@ -155,3 +163,4 @@
 + The admin chooses to see the system statistics
 + The admin chooses to see the users statistics
 + The admin chooses to see the programmed trips statistics
+
