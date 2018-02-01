@@ -4,53 +4,54 @@
 
 #### Registering an account
 
-+ L'utente si collega al servizio
-+ L'utente sceglie di registrarsi
-+ L'utente scegli un nome utente, specifica una email ed una password
-+ Il sistema conferma l'iscrizione e ridirige l'utente alla pagina principale
++ The user connects to the system 
++ The user chooses to register
++ The users inserts an username, an email and a password
++ The system confirms that the registration has been performed
++ The system redirects the user to the starting page
 
 **Alternative scenarios**
 
-* L'utente sceglie un nome utente od una email già usata da un altro utente. Il sistema segnala l'errore all'utente che deve ripetere la procedura
-* L'utente sceglie una password che non rispetta i vincoli di sicurezza. Il sistema segnala l'errore all'utente che deve ripetere la procedura
-* L'utente sceglie una email malformata. Il sistema segnala l'errore all'utente che deve ripetere la procedura
-* L'utente non specifica un campo obbligatorio, il sistema segnala l'errore all'utente che deve ripetere la procedura
+* The user chooses an username or an email that was already token by someone else. The systems will tell the user that he must repeat the registration with different information
+* The user inserts a password that doesn't comply to security standard. The systems will tell the user that he must repeat the registration with different information
+* The user inserts a malformed email.The systems will tell the user that he must repeat the registration with different information
+* The user doesn't insert one of the required fields. The systems will tell the user that he must repeat the registration with all the required information.
 
 #### View a Trip Detail
 
-+ L'utente si collega al servizio
-+ L'utente sceglie di vedere i dettagli di un viaggio
-+ L'utente sceglie il mezzo di trasporto
-+ L'utente sceglie il punto di partenza, di arrivo e l'orario
-+ L'utente sceglie da un elenco proposto dal sistema il viaggio
-+ L'utente vede i dettagli del viaggio
++ The user connects to the system
++ The user chooses to see the details of a trip 
++ The user chooses the vehicle type
++ The user chooses departing and arrival location and time
++ The user will see the entire list of compatible solutions found with their details 
 
 **Alternative Scenarios**
-+ Non vi sono viaggi compatibili con i dati inseriti, il sistema informa l'utente
-+ L'utente inserisce dei dati sbagliati o incompleti; il sistema avvisa l'utente e chiede di ripetere l'inserimento dei dati
-
++ No compatible solutions were found, an error message will be shown
++ The user inserts incomplete data; no compatible solutions will be found
 
 ### Traveller
 
 #### Signin in an account
 
-+ L'utente si collega al servizio
-+ L'utente sceglie di fare l'autenticazione
-+ L'utente inserisce i dati e il sistema, dopo averli verificati, ridireziona l'utente alla pagina principale
++ The user connects to the system
++ The system decides to log-in 
++ The user inserts the required data
++ The system will check the data and redirect the user to the starting page
 
 **Alternative scenarios**
 
-* Se l'utente inserisce dati sbagliati il sistema segnala l'errore all'utente che dovrà ripetere la rocedura
-* Se l'utente è già loggato, il sistema lo riconosce e lo reindirizza automaticamente alla pagina principale
+* The user inserts wrong information; the system will show an error message and ask the user to repeat the operation
+* The user is already logged in; the system will recognize him and will redirect him to the starting page
 
 
 #### Follow a trip
 
-+ L'utente si collega al serivizo e si autentica
-+ L'utente sceglie il mezzo di trasporto
-+ L'utente sceglie il punto di partenza, di arrivo e l'orario
-+ L'utente sceglie da un elenco proposto dal sistema il viaggio
-+ L'utente conferma la scelta effettuata
++ The user connects and logs-in into the system
++ The user chooses the vehicle type
++ The user chooses departing and arrival location and time
++ The user will see the entire list of compatible solutions found
++ The user selects one of the solutions proposed 
++ The user confirms the choice
 
 **Alternative scenarios**
 
@@ -103,9 +104,9 @@
 
 #### Unfollow a trip
 
-+ L'utente si collega al serivizo
-+ L'utente sceglie dall'elenco dei viaggi seguiti quello che intende smettere di seguire
-+ L'utente conferma la scelta effettuata
++ The user connects to the system
++ The user selects, from the list of the trips followed by himself, the one that doesn't want to follow anymore 
++ The user confirms the selection 
 
 **Alternative scenarios**
 
@@ -113,9 +114,7 @@
 
 #### Receive a notification
 
-+ L'utente visualizza la notifica inviata dal sistema
-+ L'utente seleziona la notifica
-+ Il sistema visualizza i dettagli relativi alla notifica selezionata
++ The user's device shows to the user the notification sent by the system 
 
 **Alternative scenarios**
 
@@ -123,13 +122,13 @@
 
 #### Contact the administrator
 
-+ L'utente invia una email all'indirizzo dell'amministratore di sistema
++ The users sends an email to the administrator
 
 #### Configure notification frequency and type
 
-+ L'utente accede al servizio
-+ L'utente sceglie la frequenza delle notifiche che riceverà
-+ L'utente decide il tipo di notifiche a cui sarà esposto
++ The user connects to the system
++ The user selects the frequency of the notifications that will be sent to him
++ The user di notifiche a cui sarà esposto
 + L'utente conferma la scelta effettuata
 + Il sistema conferma il successo dell'operazione
 
