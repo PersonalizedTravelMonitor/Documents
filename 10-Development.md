@@ -1,5 +1,9 @@
 # Development
 
+## Deployment Diagram
+
+![](06-ArchitecturalDiagram/Deployment_Diagram.png "Deployment Diagram")
+
 ## Language and Tools
 
 To develop a Web Application for the project we used **PHP 7.1** for the backend and **HTML5, CSS3, Javascript** for the frontend.
