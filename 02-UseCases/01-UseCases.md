@@ -18,12 +18,12 @@
 + The system confirms that the registration has been performed
 + The system redirects the user to the starting page
 
-**Alternative scenarios**
+*Alternative scenarios*
 
-* The user chooses an username or an email that was already token by someone else. The systems will tell the user that he must repeat the registration with different information
-* The user inserts a password that doesn't comply to security standard. The systems will tell the user that he must repeat the registration with different information
-* The user inserts a malformed email.The systems will tell the user that he must repeat the registration with different information
-* The user doesn't insert one of the required fields. The systems will tell the user that he must repeat the registration with all the required information.
+* The user chooses an username or an email that was already taken by someone else. The system will tell the user that he must repeat the registration with different information
+* The user inserts a password that doesn't comply to security standard. The system will tell the user that he must repeat the registration with different information
+* The user inserts a malformed email. The system will tell the user that he must repeat the registration with different information
+* The user doesn't insert one of the required fields. The system will tell the user that he must repeat the registration with all the required information
 
 #### View a Trip Detail
 
@@ -33,7 +33,7 @@
 + The user chooses departing and arrival location and time
 + The user will see the entire list of compatible solutions found with their details
 
-**Alternative Scenarios**
+*Alternative Scenarios*
 
 + No compatible solutions were found, an error message will be shown
 + The user inserts incomplete data; no compatible solutions will be found
@@ -47,7 +47,7 @@
 + The user inserts the required data
 + The system will check the data and redirect the user to the starting page
 
-**Alternative scenarios**
+*Alternative scenarios*
 
 * The user inserts wrong information; the system will show an error message and ask the user to repeat the operation
 * The user is already logged in; the system will recognize him and will redirect him to the starting page
@@ -62,7 +62,7 @@
 + The user selects one of the solutions proposed
 + The user confirms the choice
 
-**Alternative scenarios**
+*Alternative scenarios*
 
 * If no compatible solutions are found an error message will be shown to the user
 * The user doesn't confirm the selection, the operation will be discarded
@@ -77,7 +77,7 @@
 + The system shows a list of compatible solutions found
 + The user chooses one of the solutions
 
-**Alternative scenarios**
+*Alternative scenarios*
 
 * If no compatible solutions are found an error message will be shown to the user
 
@@ -88,7 +88,8 @@
 + The user inserts some information and confirms his intentio to send the message
 + The system receives and shows to everyone interested in the same trip the user's report
 
-**Alternative scenarios**
+*Alternative scenarios*
+
 * The user doesn't give a confirmation; the report will be discarded
 * The user wants to send multiple report and therefore will perform this operation multiple times
 
@@ -115,7 +116,7 @@
 + The user selects, from the list of the trips followed by himself, the one that doesn't want to follow anymore
 + The user confirms the selection
 
-**Alternative scenarios**
+*Alternative scenarios*
 
 * There are no trips followed by the user, the operation is not possible
 
@@ -136,7 +137,7 @@
 + The user confirms the selection
 + The system confirms that the modifications took places
 
-**Alternative scenarios**
+*Alternative scenarios*
 
 * If the change is not confirmed the system will keep the last settings
 
@@ -150,7 +151,7 @@
 + The admin chooses the users to send the notification to (all by default)
 + The system send the notification to the users
 
-**Alternative scenarios**
+*Alternative scenarios*
 
 * The admin inserts wrong information; the system will show an error message and ask the user to repeat the operation
 * The admin is already logged in; the system will recognize him and will redirect him to the starting page

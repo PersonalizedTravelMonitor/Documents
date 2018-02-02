@@ -4,7 +4,7 @@
 
 This is the text of the project as proposed on [the Score website](http://score-contest.org/2018/projects/ptm.php).
 
-More and more applications are available, provided for example by transport operators such as railway companies, metropolitan of regional transportation authorities, that provide real-time information to users when disruptions occur in their networks. Typically, however, these applications provide generic information, in a “one size fits all” approach, where every user receives the same notifications.
+More and more applications are available, provided for example by transport operators such as railway companies, metropolitan or regional transportation authorities, that provide real-time information to users when disruptions occur in their networks. Typically, however, these applications provide generic information, in a “one size fits all” approach, where every user receives the same notifications.
 
 The goal of the project is to develop a system that allows users to receive targeted, personalized information only when their routes of interest are affected by the disruptions, and only at the right time (for example, a disruption that occurs in a metro line when the user is out of town is of no interest to the user). The students are expected to identify one or more transport operators of interest, identify the available sources of information concerning disruptions (which might also be user-generated information spread through social networks, possibly through functions available on the application itself), and to create a system that provides users with information that is as accurate, timely and personalized as possible. Students are encouraged to interact with transport operators and potential users of the system to gather their expectations and needs concerning such a system.
 
@@ -25,7 +25,7 @@ The project was carried out with the [Agile methodology](https://en.wikipedia.or
 
 Everthing went mostly according to plan, but in the end, since exams were longer than expected, we decided to not implement some small but not core features (basically a few of the *could* and *want* features detailed in the requirement analysis) but we still carried out the initial analysis for them.
 
-Since we gave the planning phase enough time we were able to design the project very closely to what the implementation turned out to be. This was definitely a great thing for us and it allowed the implementation to be pretty straigth-forward, basically following design documents. The only changes we had to make to the diagrams after the development were only related to naming differnces, the general workflow was still the same.
+Since we gave the planning phase enough time we were able to design the project very closely to what the implementation turned out to be. This was definitely a great thing for us and it allowed the implementation to be pretty straigth-forward, basically following design documents. The only changes we had to make to the diagrams after the development were only related to naming differences, the application flow was still the same.
 
 At this moment the only public transportation provider that was implemented is Trenord. The next providers that will be added are Trenitalia and ATM.
 

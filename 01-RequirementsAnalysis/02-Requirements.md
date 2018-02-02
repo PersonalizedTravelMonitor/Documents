@@ -2,83 +2,83 @@
 
 ### Functional requirements
 
-Requirements are in the format of: Requirement [Expected Complexity (1-5), [MoSCoW Priority](https://en.wikipedia.org/wiki/MoSCoW_method)].
+Requirements are in the format of: Requirement [Expected Complexity (1-5), [MoSCoW Priority](https://en.wikipedia.org/wiki/MoSCoW_method), [Progress]].
 
 Each group of requirements is related to a user story, indicated between round brackets.
 
 (C1)
 
-* Allow the user to follow trips *[4, M]*
-	* To follow trips on a one-time basis *[3, M]*
-	* To follow trips periodically *[4, S]*
+* Allow the user to follow trips *[4, M, Completed]*
+	* To follow trips on a one-time basis *[3, M, Completed]*
+	* To follow trips periodically *[4, S, Completed]*
 		* The user can specify days of the week in which to follow a trip (by default from Monday to Friday)
-* Allow the user to stop following a trip *[2, M]*
-* Send notifications to the user based to distruptions affecting trips he/she is following *[2/3, M]*
+* Allow the user to stop following a trip *[2, M, Completed]*
+* Send notifications to the user based to distruptions affecting trips he/she is following *[2/3, M, Completed]*
 
 (C2)
 
-* Automatically find alternatives to a given trip affected by distruptions *[5, C]*
+* Automatically find alternatives to a given trip affected by distruptions *[5, Missing]*
 	* Find alternative public transport solutions
 	* Find alternative private transport solutions
 
 (C3)
 
-* Allow the user to configure which notifications he/she should receive *[3, C]*
+* Allow the user to configure which notifications he/she should receive *[3, W, Missing]*
 	* According to the severity of the issue
 	* According to the type of the issue
-	* According to the place where the user is located *[5, C]*
-* Allow the user to configure how many notifications he/she should receive  *[3, C]*
+	* According to the place where the user is located *[5, W, Missing]*
+* Allow the user to configure how many notifications he/she should receive  *[3, C, Missing]*
 	* Frequency
 	* Maximum number
 
 (C4)
 
-* Recognize planned distruptions of the service and send notifications to the users at least two days before the event (or as soon as possible if the event is happening in less than two days) *[5, S]*
+* Recognize planned distruptions of the service and send notifications to the users at least two days before the event (or as soon as possible if the event is happening in less than two days) *[5, S, Partial]*
 
 (C5)
 
-* Allow the user to report unplanned distruptions involving his trip *[3, S]*
+* Allow the user to report unplanned distruptions involving his trip *[3, S, Completed]*
 	* The reports will be divided in categories (Delay, Suppression, Other)
 	* It will be possibile to also add an optional short description
-* Allow the user to read other's (and his) report involving transport lines of his interest *[2, S]*
+* Allow the user to read other's (and his) report involving transport lines of his interest *[2, S, Completed]*
 
 (C6)
 
-* Store statistics about distruptions on trips followed by users *[3, C]*
+* Store statistics about distruptions on trips followed by users *[3, C, Partial]*
 	* Average Delay
-* Allow to the user to read statistics on the distruptions *[2, C]*
+* Allow to the user to read statistics on the distruptions *[2, C, Completed]*
 	* On his trips
 	* On his transport lines of interest
 
 (C7)
 
-* Allow the user to register to the system using username, email and password *[3, M]*
-* Allow the user to register using external authentication services (Google, Facebook) *[4, C]*
+* Allow the user to register to the system using username, email and password *[3, M, Completed]*
+* Allow the user to register using external authentication services (Google, Facebook, etc) *[4, C, Completed]*
 
 (C9)
 
-* Recognize distruptions involving a whole transport line (when possible) in the moments before the trip *[4/5, S]*
-* Send notifications on issues involving a whole transport line *[2/3, S]*
+* Recognize distruptions involving a whole transport line (when possible) in the moments before the trip *[4/5, S, Partial]*
+* Send notifications on issues involving a whole transport line *[2/3, S, Missing]*
 
 (C10)
 
-* Allow the user to share the status of a trip with external services (Facebook, Twitter, Email, Whatsapp) *[2, C/W]*
+* Allow the user to share the status of a trip with external services (Facebook, Twitter, Email, Whatsapp) *[2, C/W, Completed]*
 
 (C11)
 
-* Allow the user to contact the administrator through email *[1, S]*
+* Allow the user to contact the administrator through email *[1, S, Completed]*
 
 (A1)
 
-* Allow the administrator to send textual notification to the users *[2/3, C]*
+* Allow the administrator to send textual notification to the users *[2/3, C, Completed]*
 
 (A2)
 
-* Allow the administrator to see data about the state of the system, users, trips in a specific section *[3, C]*
+* Allow the administrator to see data about the state of the system, users, trips in a specific section *[3, C, Completed]*
 
 (A3)
 
-* Allow the administrator to change or delete user's report*[3, S]*
+* Allow the administrator to delete user's report*[3, S, Completed]*
 
 ### Non-functional requirements
 
