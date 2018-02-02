@@ -2,10 +2,10 @@
 
 * **Traveler**: user that use public transports
 * **Public Transports**: train, metro, bus, ..
-* **Trip**: from point A to point B by public transport
+* **Trip**: movement from a departure point to a destination with a public transport
 	* **Periodic Trip**: Trip repeated several times in a week
-	* **Occasional Trip**: Occasional single trip
+	* **Occasional Trip**: trip carried out just one time
 * **Unplanned disruption**: delays, cancellations, unexpected changes
-* **Scheduled disruption**: strike or long-term changes in the transport service
-* **Relevant notification**: Notification relevant for the user's location, to the line of interest, ...
-* **Transport Line**: set of trips with a common route, sharing the destination and the departure station
+* **Scheduled disruption**: strike or long-term changes in the transport service disclosed by the transportation provider
+* **Relevant notification**: Notification relevant for the user's location, line or trip of interest
+* **Transport Line**: common route, shared by a set of trips that have same destination and same departure station
