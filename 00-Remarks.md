@@ -37,7 +37,7 @@ Before beginning the project we defined a Gantt chart to plan the evolution of t
 
 During the development we updated the Gantt and in the end this was how the project turned out to be.
 
-![](Images/Gantt-old.png "Final Gantt Diagram")
+![](Images/Gantt-Final.png "Final Gantt Diagram")
 
 ## Useful Links
 
