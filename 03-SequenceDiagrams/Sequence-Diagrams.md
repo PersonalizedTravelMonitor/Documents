@@ -1,5 +1,9 @@
 # Design
 
+## Domain Model Diagram
+
+![](07-ClassDiagrams/DomainModelDiagram.png)
+
 ## Sequence and Activity Diagrams
 
 ### User Registration
