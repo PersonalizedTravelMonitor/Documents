@@ -9,3 +9,4 @@
 * **Scheduled disruption**: strike or long-term changes in the transport service disclosed by the transportation provider
 * **Relevant notification**: Notification relevant for the user's location, line or trip of interest
 * **Transport Line**: common route, shared by a set of trips that have same destination and same departure station
+

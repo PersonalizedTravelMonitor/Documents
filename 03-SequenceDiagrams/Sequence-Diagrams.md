@@ -4,10 +4,6 @@
 
 ![](07-ClassDiagrams/DomainModelDiagram.png)
 
-## Packages Diagram
-
-![](06-ArchitecturalDiagram/PackageDiagram.png "Packages Diagram")
-
 ## Sequence and Activity Diagrams
 
 ### User Registration

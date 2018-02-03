@@ -1,6 +1,6 @@
-## Lesson Learned
+# Lesson Learned
 
-### Planning and Design Phase
+## Planning and Design Phase
 
 * We understood why the design phase is fundamental in all projects, it allowed us to really think how the project was going to be implemented (especially regarding its structure)
 * Working on a project about an environment you know quite closely (public transport services) definitely proven to find critical and focal aspects of the system that needed more attention than others
@@ -8,7 +8,7 @@
 * It was not easy to understand how much the use cases (and diagrams in general) needed to be detailed
 * It is fundamental to learn how to use modelling tools efficiently to save time and improve quality of the work
 
-### Development phase
+## Development phase
 
 * We understimated development times during the initial design phase (also because we did not really plan for the exams in the first place)
 * For some features of the backend it would have been better to develop following a Test Driven Development approach, we did not do so because we found writing tests very time consuming. In the end we think we should have written the test, since a lot of time was spent debugging
@@ -21,18 +21,18 @@
 	* In the end using a framework was the best choice since the resulting code was much cleaner, easier to change and less bug-prone
 * SonarQube is useful, but is not enough. The PHP integration has not everything we wanted and in the end we had to use other tools for static analysis (such as [PHPStan](https://github.com/phpstan/phpstan))
 
-#### Technical Difficulties with extenal APIs
+### Technical Difficulties with extenal APIs
 
 * Working with external APIs, especially APIs not publicly available (Trenord, Trenitalia, ...) was not ideal, we spent a lot of time figuring out how the APIs worked, since they were not documented
 	* If we had developed the service with a different country in mind it would have been a bit easier, since most foreign public transports offer a documented and publicly accessible API
 
-### Other considerations
+## Other considerations
 
-#### Quality
+### Quality
 
 * If we had more time we could have completed all the features specified both in the original proposal and in the planning phase, as well as extensive QA testing and and improved user interface
 
-#### Risks
+### Risks
 
 * External APIs are not reliable, a few times they stopped working and we had to figure out how to handle these failures
 	* There was and there is still the concrete risk that we could get blocked from the informations providers

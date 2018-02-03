@@ -1,8 +1,31 @@
 # Development
 
-## Deployment Diagram
+## Packages Diagram
 
-![](06-ArchitecturalDiagram/Deployment_Diagram.png "Deployment Diagram")
+![](06-ArchitecturalDiagrams/Package/PackageDiagram.png "Packages Diagram")
+
+## Class Diagram
+
+### Overview
+
+![](06-ArchitecturalDiagrams/ProjectClasses/ProjectClassDiagram.png "Class Diagram")
+
+### Detail: Models
+
+![](06-ArchitecturalDiagrams/ProjectClasses/ClassParts/01_models.png "Class Diagram")
+
+### Detail: Controllers
+
+![](06-ArchitecturalDiagrams/ProjectClasses/ClassParts/03_controllers.png "Class Diagram")
+
+### Detail: Information Providers
+
+![](06-ArchitecturalDiagrams/ProjectClasses/ClassParts/02_externalProviders.png "Class Diagram")
+
+### Detail: Other
+
+![](06-ArchitecturalDiagrams/ProjectClasses/ClassParts/04_others.png "Class Diagram")
+
 
 ## Language and Tools
 
@@ -17,6 +40,10 @@ For handling the best compatibility across the development and the production en
 We kept track of the development using [git](https://git-scm.com/) and hosted the project on [GitHub](https://github.com/) as a public repository since we decided that there was no point in hiding the code and it could be useful to others developing for the same problematic. Mostly the development took place on the `master` branch but sometiems we created feature branches when we were making braking changes and did not want to distrupt other developers. Examples of branches are the `push-notifications` branch and `improve-UI` branch.
 
 We decided to keep track of the work to be done using a [Kanban board](https://leankit.com/learn/kanban/kanban-board/) 3-column approach, keeping track using the Projects feature of GitHub. You can [see the Kanban board here](https://github.com/PersonalizedTravelMonitor/Application/projects/1).
+
+## Deployment Diagram
+
+![](06-ArchitecturalDiagrams/Deployment/Deployment_Diagram.png "Deployment Diagram")
 
 ## Database Schema
 
@@ -83,11 +110,15 @@ Since it is a pretty long process to build it locally (there are a few steps to 
 
 **Warning:** To also deploy a fully working version of the project (not only building and starting but also allowing the user to login via Social Networks, search and follow trips) you need a few values to insert into the `.env` files, API keys and other *secrets* that we can't ([and should not](https://softwareengineering.stackexchange.com/questions/205606/strategy-for-keeping-secret-info-such-as-api-keys-out-of-source-control)) share on a version controlled public repository. If you want these values please get in touch with the group supervisor ([s.vitali@campus.unimib.it](mailto:s.vitali@campus.unimib.it))
 
-## SonarQube Integration
+## Static Analysis with SonarQube
 
 To keep track of code quality we used [SonarQube](https://www.sonarqube.org/) together with [SonarQube Scanner](https://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Scanner). This proven quite a useful tools, since it allowed us to keep track of the code as it grew and improve it as necessary. We aimed (and got) 0 bugs and `A` level for code smells; there are still some code smells left in the code (about 20, *all* about string literals not being represented as constants) especially related to a particular class: `App\ExternalAPIs\TrenordSearchResultsCleaner`.
 
-It is possible to fix them just to please SonarQube, but it would be *wrong* since that class is responsible for walking through an object with many different fields and removing the unnecessary ones: having constants insteaad of strings would not remove the complexity of the code. The same goes for the same kind of code smells in the other classes.
+It is possible to fix them just to please SonarQube, but it would be *wrong* since that class is responsible for walking through an object with many different fields and removing the unnecessary ones: having constants instead of strings would not remove the complexity of the code. The same goes for the same kind of code smells in the other classes.
+
+Another thing we did not like about the SonarQube code alayzer is that it did not "like" functions with more than 3 returns. We strongly believe in the [return ealy pattern](https://softwareengineering.stackexchange.com/questions/18454/should-i-return-from-a-function-early-or-use-an-if-statement) for writing functions. To avoid a lot of returns we had to use long conditions in `if` statements which we think is not ideal.
+
+Also SonarQube did not find errors about missing includes and undefined variables. In the end we also resorted to other static analysis tools such as [PHPStan](https://github.com/phpstan/phpstan) that proved more effective in some fields where SonarQube was not so great.
 
 ![](Images/SonarQube.png "SonarQube View")
 
